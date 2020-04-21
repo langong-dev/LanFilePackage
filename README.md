@@ -13,6 +13,9 @@ cd ~/<FOLDER>
 
 # Run the install.sh
 sudo bash install.sh
+
+# If you are ARM or MacOS, please do this
+g++ main.cpp -o LanGong
 ```
 
 ## Use
