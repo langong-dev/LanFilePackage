@@ -37,6 +37,7 @@ cd ~/<FOLDER>
 | install | git | < PackageURL > | Install package from Internet by Git |
 | run | / | < PackageName > | Run your software |
 | ls | / | / | See your packages list |
+| help | / | / | Help |
 
 ### Example
 
