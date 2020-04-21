@@ -16,10 +16,10 @@ int main(int argc, char* argv[])
 	//strcpy(type,trim(temp));
 	strcpy(temp,"install");
 	strcpy(temp,trim(temp));
-	if(strlen(type)==7){
+	if(strcmp(type,"install")==0){
 		strcpy(clas,argv[2]);
 		//strcpy(clas,trim(temp));
-		if(strlen(clas)==6){//GitHub
+		if(strcmp(clas,"github")==0){//GitHub
 			printf(" Install form GitHub : \n\n\n");
 			strcpy(temp,argv[3]);
 			strcpy(name,trim(temp));
@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 			printf("\n\n Install successfully! \n");
 			return 0;
 		}
-		else if(strlen(clas)==10){//langonggit
+		else if(strcmp(clas,"langonggit")==0){//langonggit
 			printf(" Install from LanGit : \n\n\n");
 			strcpy(name,argv[3]);
 			char dobash[10005];
@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
 			printf("\n\n Install successfully! \n");
 			return 0;
 		}
-		else if(strlen(clas)==3){//git
+		else if(strcmp(clas,"git")==0){//git
 			printf(" Install form Git : \n\n\n");
 			strcpy(name,argv[3]);
 			char dobash[105];
@@ -56,22 +56,22 @@ int main(int argc, char* argv[])
 			printf("\n\n Install successfully! \n");
 			return 0;
 		}
-		cout<<"Not Found this : "<<clas;
+		cout<<"Not Found this : "<<clas<<endl;
 		return 1;
 	}
-	else if(strlen(type)==2){
+	else if(strcmp(type,"ls")==0){
 		printf(" List: \n\n\n");
 		system("cd ~/LanGongFile/ && ls -a");
 		printf(" \n\n Load list successfully! \n");
 		return 0;
 	}
-	else if(strlen(type)==3){
+	else if(strcmp(type,"run")==0){
 		char dobash[10005];
 		strcpy(dobash,"bash run.sh ");
 		strcat(dobash,argv[2]);
 		system(dobash);
 		return 0;
 	}
-	cout<<"Not Found this : "<<type;
+	cout<<"Not Found this : "<<type<<endl;;
 	return 1;
 }
