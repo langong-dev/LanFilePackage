@@ -72,6 +72,10 @@ int main(int argc, char* argv[])
 		system(dobash);
 		return 0;
 	}
-	cout<<"Not Found this : "<<type<<endl;;
+	else if(strcmp(type,"help")==0){
+		system("bash help.sh");
+		return 0;
+	}
+	cout<<"Not Found this : "<<type<<endl<<"Do you need help?"<<endl<<"Input './LanGong help' .";
 	return 1;
 }

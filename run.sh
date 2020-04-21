@@ -1,9 +1,12 @@
 #!/bin/bash
 
+. ./config.sh
+che $1
 
 name=$1
 filename="LanGongFile/"$name
-cd ~/$filename
+cd ~/
+cd $filename
 
 filename="in.index"
 
