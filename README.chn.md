@@ -33,7 +33,8 @@ cd ~/<FOLDER>
 | 命令Type | Class | Name | 意思 |
 |:---:|:---:|:---:|:---:|
 | install | github | < PackageUser >/< PackageName > | 下载GitHub上的软件包 |
-| install | langonggit | < PackageName> | 下载蓝光在线软件包 |
+| install | langong | < PackageName> | 下载蓝光在线软件包 |
+| install | langong | < PackageName> | [如果你不知道我们有什么软件，点击我去查看](https://langong-dev.github.io/Package/) |
 | install | git | < PackageURL > | 下载网络上Git的软件包 |
 | run | / | < PackageName > | 运行你所下载的软件包 |
 | ls | / | / | 查看安装的所有软件包 |
