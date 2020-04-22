@@ -1,5 +1,7 @@
 # LanFilePackage
 
+[简体中文？点击切换](/README.chn.md)
+
 Full name : LanGong File Station Package
 
 ## Install
