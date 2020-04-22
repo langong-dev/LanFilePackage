@@ -19,6 +19,8 @@ rac(){
 	echo $entrance >> in.index
 	echo " } " >> in.index
 	echo
+	echo -n "Install Config in "$name" at " >> ~/.config/LanFilePackage.log
+	date -u >> ~/.config/LanGongFilePackage.log
 }
 
 che(){
