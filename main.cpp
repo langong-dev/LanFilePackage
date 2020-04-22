@@ -46,6 +46,21 @@ int main(int argc, char* argv[])
 			printf("\n\n Install successfully! \n");
 			return 0;
 		}
+		else if(strcmp(clas,"langong")==0){
+			printf(" Install from LanGong Package : \n\n\n");
+			strcpy(name,argv[3]);
+			char dobash[10005];
+			strcpy(dobash,"cd ~/LanGongFile/ && mkdir ");
+			strcat(dobash,name);
+			strcat(dobash," && cd ");
+			strcat(dobash,name);
+			strcat(dobash," && wget https://langong-dev.github.io/Package/pac/");
+			strcat(dobash,name);
+			strcat(dobash,".zip -o download.zip && unzip download.zip");
+			system(dobash);
+			printf("\n\n Install successfully! \n");
+			return 0;
+		}
 		else if(strcmp(clas,"git")==0){//git
 			printf(" Install form Git : \n\n\n");
 			strcpy(name,argv[3]);
