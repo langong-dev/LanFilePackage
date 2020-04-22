@@ -25,7 +25,7 @@ g++ main.cpp -o LanGong
 cd ~/<FOLDER>
 
 # Run
-./ LanGong <Type> <Class> <Name>
+./LanGong <Type> <Class> <Name>
 ```
 
 ### Shell All
