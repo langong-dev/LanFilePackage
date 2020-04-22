@@ -43,6 +43,7 @@ int main(int argc, char* argv[])
 			strcat(dobash,name);
 			strcat(dobash,".zip -o download.zip && unzip download.zip");
 			system(dobash);
+			printf("\n%s\n",dobash);
 			printf("\n\n Install successfully! \n");
 			return 0;
 		}
@@ -56,7 +57,7 @@ int main(int argc, char* argv[])
 			strcat(dobash,name);
 			strcat(dobash," && wget https://langong-dev.github.io/Package/pac/");
 			strcat(dobash,name);
-			strcat(dobash,".zip -o download.zip && unzip download.zip");
+			strcat(dobash,".zip -O download.zip -o download.log && unzip download.zip");
 			system(dobash);
 			printf("\n\n Install successfully! \n");
 			return 0;
