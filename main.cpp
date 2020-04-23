@@ -93,5 +93,6 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 	cout<<"Not Found this : "<<type<<endl<<"Do you need help?"<<endl<<"Input './LanGong help' .";
+	system("echo 'Not Found' >> ~/.config/LanFilePackage.log");
 	return 1;
 }

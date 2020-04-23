@@ -13,8 +13,8 @@ cd ~/
 mkdir LanGongFile
 cd  LanGongFile
 touch .lanrc
-echo -n "made by LanGongINC, Install at " >> ~/.lanrc 
-date -u >> ~/.lanrc 
+echo -n "made by LanGongINC, Install at " >> ~/.config/LanFilePackage.log
+date -u >> ~/.config/LanFilePackage.log 
 echo
 echo
 exit 0
