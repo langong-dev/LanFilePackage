@@ -10,6 +10,21 @@ char clas[105];
 char name[105];
 char temp[105];
 
+char* chu(char a[])
+{
+	char b[1005];
+	char* c = new char ;
+	strcpy(b,a);
+	int ns=0,s=0;
+	for(int i=0;i<strlen(b);i++)
+	{
+		if(ns==1)c[s++]=b[i];
+		if(b[i]=='/')ns=1;
+	}
+	c[s]='\0';
+	return c;
+}
+
 int main(int argc, char* argv[])
 {
 	strcpy(type,argv[1]);
@@ -26,7 +41,9 @@ int main(int argc, char* argv[])
 			char dobash[105];
 			strcpy(dobash,"cd ~/LanGongFile/ && git clone https://github.com/");
 			strcat(dobash,name);
-			strcat(dobash,".git ");
+			strcat(dobash,".git && cd ");
+			strcat(dobash,chu(name));
+			strcat(dobash," && bash before.sh");
 			system(dobash);
 			printf("\n\n Install successfully! \n");
 			return 0;
@@ -41,7 +58,7 @@ int main(int argc, char* argv[])
 			strcat(dobash,name);
 			strcat(dobash," && wget https://langong-dev.github.io/doc/");
 			strcat(dobash,name);
-			strcat(dobash,".zip -o download.zip && unzip download.zip");
+			strcat(dobash,".zip -o download.zip && unzip download.zip && bash before.sh");
 			system(dobash);
 			printf("\n%s\n",dobash);
 			printf("\n\n Install successfully! \n");
@@ -57,7 +74,7 @@ int main(int argc, char* argv[])
 			strcat(dobash,name);
 			strcat(dobash," && wget https://langong-dev.github.io/Package/pac/");
 			strcat(dobash,name);
-			strcat(dobash,".zip -O download.zip -o download.log && unzip download.zip");
+			strcat(dobash,".zip -O download.zip -o download.log && unzip download.zip && bash before.sh");
 			system(dobash);
 			printf("\n\n Install successfully! \n");
 			return 0;
@@ -68,6 +85,7 @@ int main(int argc, char* argv[])
 			char dobash[105];
 			strcpy(dobash,"cd ~/LanGongFile/ && git clone ");
 			strcat(dobash,name);
+			strcat(dobash," && bash before.sh");
 			system(dobash);
 			printf("\n\n Install successfully! \n");
 			return 0;
