@@ -36,8 +36,8 @@ cd ~/<FOLDER>
 |:---:|:---:|:---:|:---:|
 | install | github | < PackageUser >/< PackageName > | Install package form GitHub |
 | install | git | < PackageURL > | Install package from Internet by Git |
-| install | langong | <PackageName> | Install package from LanGongOnline|
-| install | langong | <PackageName> | [if you don't know which we have, click here](https://langong-dev.github.io/Package/)|
+| install | langong | < PackageName > | Install package from LanGongOnline|
+| install | langong | < PackageName > | [if you don't know which we have, click here](https://langong-dev.github.io/Package/)|
 | run | / | < PackageName > | Run your software |
 | ls | / | / | See your packages list |
 | help | / | / | Help |
