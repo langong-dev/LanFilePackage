@@ -16,9 +16,10 @@ Use: './LanGong install <class> <name>'
 	Mean: Install Package from Git in Internet.
 	Use: './LanGong install git <PackageName>'(without '.git')
 
-	3. 'langonggit'
-	Mean: Install Package from LanGongINC.
-	Use: './LanGong install langonggit <PackageName>'
+	3. 'langong'
+	Mean: Install Package from LanGongOnline.
+	Use: './LanGong install langong <PackageName>'
+	Remarks: You can find ALL LanGong packages on 'https://langong-dev.github.io/Package/' .
 
 2. 'run'
 Mean: Run the Software.
@@ -27,4 +28,6 @@ Use: './LanGong run <name>'
 3. 'ls'
 Mean: Fetch all Package.
 Use: './LanGong ls'
+
+Remarks: 'Help' is update at2020 04 25.
 "
