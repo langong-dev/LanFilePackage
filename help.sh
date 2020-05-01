@@ -38,5 +38,5 @@ Mean: Uninstall a Package.
 Use: './LanGong uninstall <PackageName>'
 Remarks: You have to use the 'root'.
 
-Remarks: 'Help' is update at 2020 05 01.
+Remarks: 'Help' is update at 2020-05-01.
 "

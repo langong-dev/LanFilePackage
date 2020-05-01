@@ -40,6 +40,8 @@ cd ~/<FOLDER>
 | install | langong | < PackageName > | [if you don't know which we have, click here](https://langong-dev.github.io/Package/)|
 | run | / | < PackageName > | Run your software |
 | ls | / | / | See your packages list |
+| uninstall | / | < PackageName > | Delete your App |
+| update | / | / | Get update |
 | help | / | / | Help |
 
 ### Example

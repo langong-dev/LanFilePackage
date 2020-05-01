@@ -38,6 +38,8 @@ cd ~/<FOLDER>
 | install | git | < PackageURL > | 下载网络上Git的软件包 |
 | run | / | < PackageName > | 运行你所下载的软件包 |
 | ls | / | / | 查看安装的所有软件包 |
+| uninstall | / | < PackageName > | 删除你的软件包 |
+| update | / | / | 获取更新 |
 | help | / | / | 帮助 |
 
 ### 使用示例
