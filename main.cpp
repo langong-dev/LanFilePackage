@@ -138,6 +138,18 @@ int main(int argc, char* argv[])
 			system("git pull");
 			return 0;
 		}
+		else if(strcmp(type,"uninstall")==0){
+			if(argv[2]==NULL){
+				char nameerr[]="Name";
+				throw nameerr;
+			}
+			strcpy(name,argv[2]);
+			char dobash[1000];
+			strcpy(dobash,"cd ~/LanGongFile/ && sudo rm -r ");
+			strcat(dobash,name);
+			system(dobash);
+			return 0;
+		}
 		cout<<"Not Found this : "<<type<<endl<<endl<<"Do you need help?"<<endl<<"Input './LanGong help' .";
 		system("echo 'Error 1: Something not found.' >> ~/.config/LanFilePackage.log");
 	}
