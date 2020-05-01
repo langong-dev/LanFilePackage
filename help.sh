@@ -29,5 +29,14 @@ Use: './LanGong run <name>'
 Mean: Fetch all Package.
 Use: './LanGong ls'
 
-Remarks: 'Help' is update at2020 04 25.
+4. 'update'
+Mean: Update LanFilePackage.
+Use: './LanGong update'
+
+5. 'uninstall'
+Mean: Uninstall a Package.
+Use: './LanGong uninstall <PackageName>'
+Remarks: You have to use the 'root'.
+
+Remarks: 'Help' is update at 2020 05 01.
 "
