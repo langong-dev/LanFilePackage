@@ -134,6 +134,10 @@ int main(int argc, char* argv[])
 			system("bash help.sh");
 			return 0;
 		}
+		else if(strcmp(type,"update")==0){
+			system("git pull");
+			return 0;
+		}
 		cout<<"Not Found this : "<<type<<endl<<endl<<"Do you need help?"<<endl<<"Input './LanGong help' .";
 		system("echo 'Error 1: Something not found.' >> ~/.config/LanFilePackage.log");
 	}
