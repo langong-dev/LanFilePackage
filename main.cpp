@@ -150,6 +150,22 @@ int main(int argc, char* argv[])
 			system(dobash);
 			return 0;
 		}
+    else if(strcmp(type,"init")==0){
+      if(argv[2]==NULL){
+				char nameerr[]="Name";
+				throw nameerr;
+			}
+			strcpy(name,argv[2]);
+      char dobash[1000];
+			strcpy(dobash,"mkdir ~/LanGongFile/");
+      strcat(dobash,name);
+      strcat(dobash," && cd ~/LanGongFile/");
+      strcat(dobash,name);
+      strcat(dobash," && echo 'fun(){' >> index.in && echo '#Run your APP' >> index.in && echo '}' >> index.in && echo '#We will run it after install' >> before.sh");
+      system(dobash);
+      printf("Please input 'How to run your app' into 'index.in' (in BashScript), and input 'Something after install into 'before.sh' (in BashScript).\n\nYou can publish your app in GitHub, and tell us at LanGongINC@yeah.net!\nWe will help you!\n");
+			return 0;
+    }
 		cout<<"Not Found this : "<<type<<endl<<endl<<"Do you need help?"<<endl<<"Input './LanGong help' .";
 		system("echo 'Error 1: Something not found.' >> ~/.config/LanFilePackage.log");
 	}
