@@ -161,7 +161,7 @@ int main(int argc, char* argv[])
       strcat(dobash,name);
       strcat(dobash," && cd ~/LanGongFile/");
       strcat(dobash,name);
-      strcat(dobash," && echo 'fun(){' >> index.in && echo '#Run your APP' >> index.in && echo '}' >> index.in && echo '#We will run it after install' >> before.sh");
+      strcat(dobash," && echo 'fun(){' >> in.index && echo '#Run your APP' >> in.index && echo '}' >> in.index && echo '#We will run it after install' >> before.sh");
       system(dobash);
       printf("Please input 'How to run your app' into 'index.in' (in BashScript), and input 'Something after install into 'before.sh' (in BashScript).\n\nYou can publish your app in GitHub, and tell us at LanGongINC@yeah.net!\nWe will help you!\n");
 			return 0;
