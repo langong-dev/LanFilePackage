@@ -1,5 +1,12 @@
 # LanFilePackage
 
+![](https://img.shields.io/github/tag/langong-dev/LanFilePackage.svg)
+![](https://img.shields.io/github/release/langong-dev/LanFilePackage.svg)
+![](https://img.shields.io/github/stars/langong-dev/LanFilePackage.svg)
+![](https://img.shields.io/github/forks/langong-dev/LanFilePackage.svg)
+![](https://img.shields.io/badge/state-Service-brightgreen.svg?style=plastic)
+![](https://img.shields.io/badge/GitHub-LanGong-yellow.svg?style=social&logo=github)
+
 [简体中文？点击切换](/README.chn.md)
 
 Full name : LanGong File Station Package
