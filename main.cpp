@@ -49,6 +49,7 @@ int main(int argc, char* argv[])
 		strcpy(temp,"install");
 		strcpy(temp,trim(temp));
 		if(strcmp(type,"install")==0){
+			system("echo -n 'Install Packages at ' >> ~/.config/LanFilePackage.log && date -u >> ~/.config/LanFilePackage.log");
 			if(argv[2]==NULL){
 				char nameerr[]="Class";
 				throw nameerr;
@@ -128,6 +129,7 @@ int main(int argc, char* argv[])
 			strcpy(dobash,"bash run.sh ");
 			strcat(dobash,argv[2]);
 			system(dobash);
+			system("echo -n 'Run Packages at ' >> ~/.config/LanFilePackage.log && date -u >> ~/.config/LanFilePackage.log");
 			return 0;
 		}
 		else if(strcmp(type,"help")==0){
@@ -138,8 +140,13 @@ int main(int argc, char* argv[])
 			system("git pull");
 			return 0;
 		}
+		else if(strcmp(type,"log")==0){
+			system("echo ' Log:'&&echo&&cat ~/.config/LanFilePackage.log");
+			return 0;
+		}
 		else if(strcmp(type,"search")==0){
 			system("echo 'We found these Packages:' && curl https://langong-dev.github.io/Package/repos");
+			system("echo -n 'Search Packages at ' >> ~/.config/LanFilePackage.log && date -u >> ~/.config/LanFilePackage.log");
 			return 0;
 		}
 		else if(strcmp(type,"uninstall")==0){
@@ -152,6 +159,7 @@ int main(int argc, char* argv[])
 			strcpy(dobash,"cd ~/LanGongFile/ && sudo rm -r ");
 			strcat(dobash,name);
 			system(dobash);
+			system("echo -n 'Uninstall Packages at ' >> ~/.config/LanFilePackage.log && date -u >> ~/.config/LanFilePackage.log");
 			return 0;
 		}
     else if(strcmp(type,"init")==0){
