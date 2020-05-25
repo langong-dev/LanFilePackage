@@ -42,5 +42,9 @@ Remarks: You have to use the 'root'.
 Mean: Search LanGong's Package from GitHub.
 Use: './LanGong search'
 
+7. 'log'
+Mean: Get log
+Use: './LanGong log'
+
 Remarks: 'Help' is update at 2020-05-01.
 "

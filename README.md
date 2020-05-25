@@ -50,6 +50,8 @@ cd ~/<FOLDER>
 | uninstall | / | < PackageName > | Delete your App |
 | update | / | / | Get update |
 | help | / | / | Help |
+| log | / | / | Get log |
+| search | / | / | Search packages |
 
 ### Example
 
