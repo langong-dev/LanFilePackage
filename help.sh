@@ -38,5 +38,9 @@ Mean: Uninstall a Package.
 Use: './LanGong uninstall <PackageName>'
 Remarks: You have to use the 'root'.
 
+6. 'search'
+Mean: Search LanGong's Package from GitHub.
+Use: './LanGong search'
+
 Remarks: 'Help' is update at 2020-05-01.
 "

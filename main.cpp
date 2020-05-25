@@ -43,6 +43,7 @@ int main(int argc, char* argv[])
 			char nameerr[]="Type";
 			throw nameerr;
 		}
+		system("echo 'Updating...' && git pull && echo");
 		strcpy(type,argv[1]);
 		//strcpy(type,trim(temp));
 		strcpy(temp,"install");
@@ -59,7 +60,7 @@ int main(int argc, char* argv[])
 			strcpy(clas,argv[2]);
 			//strcpy(clas,trim(temp));
 			if(strcmp(clas,"github")==0){//GitHub
-				printf(" Install form GitHub : \n\n\n");
+				printf(" Install form GitHub : \n");
 				strcpy(temp,argv[3]);
 				strcpy(name,trim(temp));
 				char dobash[105];
@@ -73,7 +74,7 @@ int main(int argc, char* argv[])
 				return 0;
 			}
 			else if(strcmp(clas,"langonggit")==0){//langonggit
-				printf(" Install from LanGit : \n\n\n");
+				printf(" Install from LanGit : \n");
 				strcpy(name,argv[3]);
 				char dobash[10005];
 				strcpy(dobash,"cd ~/LanGongFile/ && mkdir ");
@@ -89,16 +90,15 @@ int main(int argc, char* argv[])
 				return 0;
 			}
 			else if(strcmp(clas,"langong")==0){
-				printf(" Install from LanGong Package : \n\n\n");
-				strcpy(name,argv[3]);
-				char dobash[10005];
-				strcpy(dobash,"cd ~/LanGongFile/ && mkdir ");
+				printf(" Install form LanGong-GitHub : \n");
+				strcpy(temp,argv[3]);
+				strcpy(name,trim(temp));
+				char dobash[105];
+				strcpy(dobash,"cd ~/LanGongFile/ && git clone https://github.com/langong-dev/");
 				strcat(dobash,name);
-				strcat(dobash," && cd ");
+				strcat(dobash,".git && cd ");
 				strcat(dobash,name);
-				strcat(dobash," && wget https://langong-dev.github.io/Package/pac/");
-				strcat(dobash,name);
-				strcat(dobash,".zip -O download.zip -o download.log && unzip download.zip && bash before.sh");
+				strcat(dobash," && bash before.sh");
 				system(dobash);
 				printf("\n\n Install successfully! \n");
 				return 0;
@@ -136,6 +136,10 @@ int main(int argc, char* argv[])
 		}
 		else if(strcmp(type,"update")==0){
 			system("git pull");
+			return 0;
+		}
+		else if(strcmp(type,"search")==0){
+			system("echo 'We found these Packages:' && curl https://langong-dev.github.io/Package/repos");
 			return 0;
 		}
 		else if(strcmp(type,"uninstall")==0){
