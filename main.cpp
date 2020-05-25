@@ -144,6 +144,10 @@ int main(int argc, char* argv[])
 			system("echo ' Log:'&&echo&&cat ~/.config/LanFilePackage.log");
 			return 0;
 		}
+		else if(strcmp(type,"version")==0){
+			system("bash version.sh");
+			return 0;
+		}
 		else if(strcmp(type,"search")==0){
 			system("echo 'We found these Packages:' && curl https://langong-dev.github.io/Package/repos");
 			system("echo -n 'Search Packages at ' >> ~/.config/LanFilePackage.log && date -u >> ~/.config/LanFilePackage.log");
