@@ -13,6 +13,10 @@ gettag(){
   mas=${mas//\"/}
 }
 
+
+tag="NetWork Error"
+mas=$tag
+
 echo " Getting Info..."
 echo
 gettag
