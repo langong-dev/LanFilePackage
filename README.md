@@ -79,6 +79,10 @@ cd ~/<FOLDER>
 ./LanGong ls
 ```
 
+## If you want to reinstall
+
+You can use this command: `bash install.sh`
+
 ## Your idea
 
 You can send email to ```langonginc@yeah.net``` .
