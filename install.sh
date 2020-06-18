@@ -23,7 +23,7 @@ echo -n "LanFilePackage is install at " >> ~/.config/LanFilePackage.log
 date -u >> ~/.config/LanFilePackage.log 
 
 echo " >> Creat alias..."
-echo "cd ~/LanFilePackage && ./LanGong " > ~/.lfpa
+echo "cd ~/LanFilePackage && ./LanGong \$1 \$2 \$3 \$4 \$5" > ~/.lfpa
 als="alias lfp=\"bash ~/.lfpa\""
 echo $als >> ~/.zshrc
 echo $als >> ~/.bashrc
