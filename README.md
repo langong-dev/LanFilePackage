@@ -33,6 +33,10 @@ g++ main.cpp -o LanGong
 lfp <Type> <Class> <Name>
 ```
 
+# Notice: You have to restart your terminal to use LFP.
+
+Like: `. ~/.zshrc`
+
 ### Shell All
 
 | Type | Class | Name | Mean |
