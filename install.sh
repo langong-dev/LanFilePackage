@@ -27,7 +27,7 @@ echo "
 cd ~/LanFilePackage 
 ./LanGong 
 " > .lfpa
-let als='alias lfp="bash ~/.lfpa"'
+als="alias lfp=\"bash ~/.lfpa\""
 echo $als >> ~/.zshrc
 echo $als >> ~/.bashrc
 echo $als >> ~/.fishrc
