@@ -24,6 +24,8 @@ g++ main.cpp -o LanGong
 ./ LanGong <Type> <Class> <Name>
 ```
 
+# 警告：你需要重新启动终端以使用LFP
+
 ### 命令大全
 
 | 命令Type | Class | Name | 意思 |
