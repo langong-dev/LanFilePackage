@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 			char nameerr[]="Type";
 			throw nameerr;
 		}
-		system("echo 'Updating...' && git pull && echo");
+		system("echo 'Updating...' && git pull && g++ main.cpp -o LanGong && echo");
 		strcpy(type,argv[1]);
 		//strcpy(type,trim(temp));
 		strcpy(temp,"install");
