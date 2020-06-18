@@ -21,10 +21,6 @@ g++ main.cpp -o LanGong
 ## 使用
 
 ```bash
-# 进入那个文件夹
-cd ~/<FOLDER>
-
-# 运行
 ./ LanGong <Type> <Class> <Name>
 ```
 
@@ -47,25 +43,25 @@ cd ~/<FOLDER>
 - Install Github : langong-dev/Zff
 
 ``` bash
-./LanGong install github langong-dev/Zff
+lfp install github langong-dev/Zff
 ```
 
 - Install Git : https://github.com/langonginc/Zff.git
 
 ```bash
-./LanGong install git https://github.com/langonginc/Zff.git
+lfp install git https://github.com/langonginc/Zff.git
 ```
 
 - 运行 Zff
 
 ```bash
-./LanGong run Zff
+lfp run Zff
 ```
 
 - 查看所有软件包
 
 ```bash
-./LanGong ls
+lfp ls
 ```
 
 ## 投稿

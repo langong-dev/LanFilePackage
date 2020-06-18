@@ -30,11 +30,7 @@ g++ main.cpp -o LanGong
 ## Use
 
 ```bash
-# Go into this folder
-cd ~/<FOLDER>
-
-# Run
-./LanGong <Type> <Class> <Name>
+lfp <Type> <Class> <Name>
 ```
 
 ### Shell All
@@ -58,25 +54,25 @@ cd ~/<FOLDER>
 - Install Github : langong-dev/Zff
 
 ``` bash
-./LanGong install github langong-dev/Zff
+lfp install github langong-dev/Zff
 ```
 
 - Install Git : https://github.com/langonginc/Zff.git
 
 ```bash
-./LanGong install git https://github.com/langonginc/Zff.git
+lfp install git https://github.com/langonginc/Zff.git
 ```
 
 - Run Zff
 
 ```bash
-./LanGong run Zff
+lfp run Zff
 ```
 
 - See your packages list
 
 ```bash
-./LanGong ls
+lfp ls
 ```
 
 ## If you want to reinstall
