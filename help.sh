@@ -3,48 +3,48 @@
 echo "
 Help for LanFilePackage:
 
-Use: './LanGong <type> <class> <name>'
+Use: 'lfp <type> <class> <name>'
 
 1. 'install'
 Mean: Install some Package.
-Use: './LanGong install <class> <name>'
+Use: 'lfp install <class> <name>'
 	1. 'github'
 	Mean: Install Package from GitHub.
-	Use: './LanGong install github <PackageUser>/<PackageName>'
+	Use: 'lfp install github <PackageUser>/<PackageName>'
 
 	2. 'git'
 	Mean: Install Package from Git in Internet.
-	Use: './LanGong install git <PackageName>'(without '.git')
+	Use: 'lfp install git <PackageName>'(without '.git')
 
 	3. 'langong'
 	Mean: Install Package from LanGongOnline.
-	Use: './LanGong install langong <PackageName>'
+	Use: 'lfp install langong <PackageName>'
 	Remarks: You can find ALL LanGong packages on 'https://langong-dev.github.io/Package/' .
 
 2. 'run'
 Mean: Run the Software.
-Use: './LanGong run <name>'
+Use: 'lfp run <name>'
 
 3. 'ls'
 Mean: Fetch all Package.
-Use: './LanGong ls'
+Use: 'lfp ls'
 
 4. 'update'
 Mean: Update LanFilePackage.
-Use: './LanGong update'
+Use: 'lfp update'
 
 5. 'uninstall'
 Mean: Uninstall a Package.
-Use: './LanGong uninstall <PackageName>'
+Use: 'lfp uninstall <PackageName>'
 Remarks: You have to use the 'root'.
 
 6. 'search'
 Mean: Search LanGong's Package from GitHub.
-Use: './LanGong search'
+Use: 'lfp search'
 
 7. 'log'
 Mean: Get log
-Use: './LanGong log'
+Use: 'lfp log'
 
 Remarks: 'Help' is update at 2020-05-01.
 "

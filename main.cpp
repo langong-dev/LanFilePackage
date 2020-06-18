@@ -182,11 +182,11 @@ int main(int argc, char* argv[])
       printf("Please input 'How to run your app' into 'index.in' (in BashScript), and input 'Something after install into 'before.sh' (in BashScript).\n\nYou can publish your app in GitHub, and tell us at LanGongINC@yeah.net!\nWe will help you!\n");
 			return 0;
     }
-		cout<<"Not Found this : "<<type<<endl<<endl<<"Do you need help?"<<endl<<"Input './LanGong help' .";
+		cout<<"Not Found this : "<<type<<endl<<endl<<"Do you need help?"<<endl<<"Input 'lfp help' .";
 		system("echo 'Error 1: Something not found.' >> ~/.config/LanFilePackage.log");
 	}
 	catch(char* ename){
-		printf(" Oh! You did not input the %s .\n\n Need help?\n Input this './LanGong help'.\n",ename);
+		printf(" Oh! You did not input the %s .\n\n Need help?\n Input this 'lfp help'.\n",ename);
 		system("echo 'Error 2: Something was not inputed.' >> ~/.config/LanFilePackage.log");
 		return 2;
 	}
