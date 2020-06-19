@@ -33,9 +33,17 @@ g++ main.cpp -o LanGong
 lfp <Type> <Class> <Name>
 ```
 
-# Notice: You have to restart your terminal to use LFP.
+# Notice: 1. You have to restart your terminal to use LFP.
 
 Like: `. ~/.zshrc`
+
+# Notice: 2. You can only use LFP-commands in these terminal.
+
+| Name |
+|:----:|
+| Bash |
+| Zsh |
+| Fish |
 
 ### Shell All
 
