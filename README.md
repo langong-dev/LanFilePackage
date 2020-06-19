@@ -45,6 +45,12 @@ Like: `. ~/.zshrc`
 | Zsh |
 | Fish |
 
+You can use this command to use LFP in others terminals
+
+```bash
+cd ~/LanFilePackage && ./LanGong _COMMANDS_
+```
+
 ### Shell All
 
 | Type | Class | Name | Mean |
