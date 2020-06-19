@@ -22,6 +22,8 @@ echo "fun(){
   echo
   echo ' >> Package Not Found'
   echo
+  echo -n 'Package Not Found' >> ~/.config/LanFilePackage.log
+  date -u >> ~/.config/LanFilePackage.log
 }" > "in.index"
 echo "Made by LanGongINC," > ~/.config/LanFilePackage.log
 echo -n "LanFilePackage is install at " >> ~/.config/LanFilePackage.log
