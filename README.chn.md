@@ -24,7 +24,21 @@ g++ main.cpp -o LanGong
 ./ LanGong <Type> <Class> <Name>
 ```
 
-# 警告：你需要重新启动终端以使用LFP
+# 警告：1. 你需要重新启动终端以使用LFP
+
+# 警告：2. 你只能在以下命令提示符下使用LFP命令
+
+| Name |
+|:----:|
+| Bash |
+| Zsh |
+| Fish |
+
+您可以在其他命令提示符使用以下命令
+
+```bash
+cd ~/LanFilePackage && ./LanGong _COMMANDS_
+```
 
 ### 命令大全
 
