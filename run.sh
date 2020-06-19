@@ -4,8 +4,8 @@
 che $1
 
 name=$1
-filename="LanGongFile/"$name
-cd ~/
+filename=$name
+cd ~/LanGongFile
 cd $filename
 
 filename="in.index"
