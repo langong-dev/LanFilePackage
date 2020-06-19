@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. ./color.sh
+
 gettag(){
   curl https://api.github.com/repos/langong-dev/LanFilePackage/releases/latest > val
   cat val | jq '.tag_name' > tag
@@ -17,26 +19,26 @@ gettag(){
 tag="NetWork Error"
 mas=$tag
 
-echo " Getting Info..."
+blue " Getting Info..."
 echo
 gettag
 
 echo
-echo Thanks for use LanGong-LanFilePackage.
+blue "Thanks for use LanGong-LanFilePackage."
 echo
 echo ----------
 echo
-echo "Name:    LanFilePackage"
-echo "Version: $tag"
-echo "Full:    LanFilePackage@$tag"
-echo "Author:  LanGongDEV"
-echo "Branch:  $mas"
-echo "License: MIT-License"
-echo "GitRepo: github.com:langong-dev/LanFilePackage.git"
-echo "GitSSH:  git@github.com:langong-dev/LanFilePackage.git"
+blue "Name:    LanFilePackage"
+blue "Version: $tag"
+blue "Full:    LanFilePackage@$tag"
+blue "Author:  LanGong"
+blue "Branch:  $mas"
+blue "License: MIT-License"
+blue "GitRepo: github.com:langong-dev/LanFilePackage.git"
+blue "GitSSH:  git@github.com:langong-dev/LanFilePackage.git"
 echo
 echo ----------
 echo 
-echo "Made by LanGong 2020"
+blue "Made by LanGong 2020"
 echo "Copyright (c) 2020 LanGong"
 echo

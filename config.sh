@@ -1,17 +1,17 @@
 #!/bin/bash
 
-
+. ~/LanFilePackage/color.sh
 
 rac(){
 	name=$1
 	#newfile="LanGongFile/"$name
 	# cd ~/
 	# cd $newfile
-	echo "Sorry we cannot find the entrance of this Package."
+	red " >> Sorry we cannot find the entrance of this Package."
 	echo
 	touch in.index
 	ls
-	echo "Do you know how to enter in "$name" ? (menthod 方法 , this is a bash code ,这个是一个bash命令)"
+	blue " >> Do you know how to enter in "$name" ? (menthod 方法 , this is a bash code ,这个是一个bash命令)"
 	sleep 1
 	read entrance
 	echo "OK, Please wait!"
