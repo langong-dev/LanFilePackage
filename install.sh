@@ -18,6 +18,9 @@ mkdir LanGongFile
 cd  LanGongFile
 echo " >> Creating log..."
 touch .lanrc
+echo "fun(){
+  echo 'Package Not Found'
+}" > "in.index"
 echo "Made by LanGongINC," > ~/.config/LanFilePackage.log
 echo -n "LanFilePackage is install at " >> ~/.config/LanFilePackage.log
 date -u >> ~/.config/LanFilePackage.log 
