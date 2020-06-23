@@ -120,7 +120,7 @@ int main(int argc, char* argv[])
 		}
 		else if(strcmp(type,"ls")==0){
 			printf(" List: \n\n\n");
-			system("cd ~/LanGongFile/ && ls -a");
+			system("cd ~/LanGongFile/ && ls");
 			printf(" \n\n Load list successfully! \n");
 			return 0;
 		}
@@ -160,7 +160,7 @@ int main(int argc, char* argv[])
 			}
 			strcpy(name,argv[2]);
 			char dobash[1000];
-			strcpy(dobash,"cd ~/LanGongFile/ && sudo rm -r ");
+			strcpy(dobash,"cd ~/LanGongFile/ && rm -rf ");
 			strcat(dobash,name);
 			system(dobash);
 			system("echo -n 'Uninstall Packages at ' >> ~/.config/LanFilePackage.log && date -u >> ~/.config/LanFilePackage.log");
