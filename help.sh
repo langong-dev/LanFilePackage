@@ -19,7 +19,7 @@ Use: 'lfp install <class> <name>'
 	3. 'langong'
 	Mean: Install Package from LanGongOnline.
 	Use: 'lfp install langong <PackageName>'
-	Remarks: You can find ALL LanGong packages on 'https://langong-dev.github.io/Package/' .
+	Remarks: You can find ALL LanGong packages with 'lfp search' .
 
 2. 'run'
 Mean: Run the Software.

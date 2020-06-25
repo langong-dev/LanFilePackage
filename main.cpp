@@ -115,6 +115,20 @@ int main(int argc, char* argv[])
 				printf("\n\n Install successfully! \n");
 				return 0;
 			}
+      else if(strcmp(clas,"zff")==0){
+				printf(" Install form OhZff-LanGong-GitHub : \n");
+				strcpy(temp,argv[3]);
+				strcpy(name,trim(temp));
+				char dobash[105];
+				strcpy(dobash,"cd ~/LanGongFile/ && git clone https://github.com/ohzff/");
+				strcat(dobash,name);
+				strcat(dobash,".git && cd ");
+				strcat(dobash,name);
+				strcat(dobash," && bash before.sh");
+				system(dobash);
+				printf("\n\n Install successfully! \n");
+				return 0;
+			}
 			cout<<"Not Found this : "<<clas<<endl;
 			return 1;
 		}
